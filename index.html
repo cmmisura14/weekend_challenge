@@ -1,44 +1,46 @@
-<!Doctype.html>
+<!DOCTYPE html>
 
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>D&D Character Creater</title>
+<head>
+	<meta charset="utf-8">
+	<link href='http://fonts.googleapis.com/css?family=Calligraffitti|Berkshire+Swash|Alegreya+SC' rel='stylesheet' type='text/css'>
+	<title>D&D Character Creator</title>
+	<meta name="description" content="Webpage">
+	<meta name="author" content="Cody Misura">
+	<link href="stylesheet.css" rel="stylesheet">
+</head>
 
-		<meta name="description" content="Webpage">
-		<meta name="author" content="Cody Misura">
-		<link href="stylesheet.css" rel="stylesheet">
-	</head>
-
-	<body>
-		<form id="input form">
-			<label for="name">Name:</label>
-			<input type ="text" id="name">
-			<br>
-			<label for="strength">Strength:</label>
-			<input type="text" id="strength">
-			<br>
-			<label for ="dexterity">Dexterity:</label>
-			<input type="text" id="dexterity">
-			<br>
-			<label for="constitution">Constitution:</label>
-			<input type="text" id="constitution">
-			<br>
-			<label for="wisdom">Wisdom:</label>
-			<input type="text" id="wisdom">
-			<br>
-			<label for="intelligence">Intelligence:</label>
-			<input type="text" id="intelligence">
-			<br>
-			<label for="charisma">Charisma:</label>
-			<input type="text" id="charisma">
-			<br>
-			<label for="playerClass">Player Class (Optional)</label>
-			<input type="text" id="playerClass">
-			<br>
+<body>
+	<h1>Dungeons and Dragons Attack Log</h1>
+	<div class="newCharacter">
+		<form id="inputForm">
+			<div class="characterAttributes">
+				<label for="name">Name:</label>
+				<input type ="text" class="attribute" id="name"> <br>
+				<label for="strength">Strength:</label>
+				<input type="text" class="attribute" id="strength"> <br>
+				<label for ="dexterity">Dexterity:</label>
+				<input type="text" class="attribute" id="dexterity"> <br>
+				<label for="constitution">Constitution:</label>
+				<input type="text" class="attribute" id="constitution"> <br>
+				<label for="wisdom">Wisdom:</label>
+				<input type="text" class="attribute" id="wisdom"> <br>
+				<label for="intelligence">Intelligence:</label>
+				<input type="text" class="attribute" id="intelligence"> <br>
+				<label for="charisma">Charisma:</label>
+				<input type="text" class="attribute" id="charisma"> <br>
+			</div>
+			<label for="playerClass" id="optional">Player Class (Optional)</label><br>
+			<input type="radio" name="class" value="witch" id="playerClass">Witch<br>
+			<input type="radio" name="class" value="goblin" id="playerClass">Goblin<br>
+			<input type="radio" name="class" value="monk" id="playerClass">Monk<br>
+			<input type="radio" name="class" value="mage" id="playerClass">Mage<br>
+			<input type="radio" name="class" value="warrior" id="playerClass">Warrior<br>
 			<button type="button" id="addMonster">Add Player/Monster to Records</button>
 		</form>
-		<table id ="statsTable" border ="1" style="width:100%">
+	</div>
+	<div class="characterTable">
+		<table id ="statsTable">
 			<tr>
 				<th>Name</th>
 				<th>Strength</th>
@@ -47,11 +49,12 @@
 				<th>Wisdom</th>
 				<th>Intelligence</th>
 				<th>Charisma</th>
-				<th>Player Class (Optional)</th>
+				<th>Player Class (Optional)
+			</tr>
 		</table>
-
-
-
-		<script src="app.js"></script>
-	</body>
-</html>
+	</div>
+		<p id='lastAttacker'>click on any name to ATTACK</p>
+			<p id='amazingAttack'></p>
+			<script src="app.js"></script>
+		</body>
+		</html>

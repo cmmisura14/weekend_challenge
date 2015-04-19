@@ -1,4 +1,131 @@
+
+label {
+display: inline-block;
+width: 10em;
+margin-right: 4em;
+}
+
 table {
-	border: 1px solid black;
+	width: 100%;
+}
+
+table, th, td {
+	border: .1em solid white;
 	border-collapse: collapse;
+	text-align: center;
+	color: black;
+	text-shadow: -1px -1px 0 white,
+	1px 1px 0 white,
+	-1px -1px 0 white,
+	1px 1px 0 white;
+
+}
+
+th {
+	width: 10%;
+}
+
+body {
+	background-image: url(http://i.imgur.com/UMlSzfE.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+#currentCreatures {
+	background-color: red;
+	width: 100%;
+	border-radius: 20px;
+}
+
+#playerClass {
+	text-align: right;
+}
+
+h1 {
+	color: black;
+	text-align: center;
+	font-size: 6em;
+	text-shadow: -1px -1px 0 white,
+	1px 1px 0 white,
+	-1px -1px 0 white,
+	1px 1px 0 white;
+	font-family: 'Alegreya SC', serif;
+
+}
+
+#addMonster {
+	border: .1em solid black;
+	height: 3em;
+	color: blue;
+	border-radius: 25px;
+	transition: background-color 0.5s ease;
+	transition: color 0.5s ease;
+	float: right;
+	margin-bottom: 2em;
+
+}
+
+#addMonster:hover {
+	background-color: #47476B;
+	color: red;
+}
+
+.newCharacter {
+	margin-right: auto;
+	border: .2em solid black;
+	width: 30%;
+	border-radius: 15px;
+	padding: 2em;
+	display: inline-block;
+	float: left;
+	background-image: url(http://www.myfreewallpapers.net/fantasy/wallpapers/dungeons-and-dragons-party.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.characterTable {
+	margin-left: 3em;
+	width: 60%;
+	display: inline-block;
+	color: white;
+
+}
+
+#lastAttacker {
+	text-align: center;
+	margin-top: 10%;
+	color: #FF3300;
+	font-size: 3em;
+	text-shadow: -1px -1px 0 black,
+	1px 1px 0 black,
+	-1px -1px 0 black,
+	1px 1px 0 black;
+
+}
+
+#amazingAttack {
+	text-align: center;
+	color: #FF3300;
+	font-size: 3em;
+	text-shadow: -1px -1px 0 black,
+	1px 1px 0 black,
+	-1px -1px 0 black,
+	1px 1px 0 black;
+}
+
+.characterAttributes {
+	text-align: right;
+	margin-top: 2em;
+}
+
+.attribute {
+	margin-right: 10em;
+	border-radius: 20px;
+
+}
+
+#optional {
+	margin-left: 1em;
 }
